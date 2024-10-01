@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-form {
+            background-color: #f0f0f0;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-details div {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-details i {
+            font-size: 24px;
+            color: #001f3f;
+            margin-bottom: 5px;
+        }
+
+        .contact-details span {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div>
+                        <h2>Main Office</h2>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>k-hub,b-block 204 room ,KIET</span>
+                    </div>
+                    <div>
+                        <h2>phone no</h2>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>123456789</span>
+                        <span>123456789</span>
+                    </div>
+                    <div>
+                        <h2>Insta</h2>
+                        <i class="fas fa-fax"></i>
+                        <span>k-hub_kiet</span>
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <i class="fas fa-envelope"></i>
+                        <span>k-hun email.com</span>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <label for="name">Enter your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Enter a valid email address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message" id="message" placeholder="Your Message" rows="5"></textarea>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
